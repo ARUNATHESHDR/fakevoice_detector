@@ -1,0 +1,41 @@
+// gRPC contract for telecom/enterprise-grade integration.
+// This is the low-latency path referenced in the architecture pitch --
+// implement the Python server stub with `grpcio-tools` once the REST
+// path is working end-to-end. Generate stubs with:
+//   python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. voice_analysis.proto
+
+syntax = "proto3";
+
+package voiceintegrity;
+
+service VoiceIntegrityService {
+  // Client streams audio chunks; server streams back a risk assessment
+  // after every processed window.
+  rpc AnalyzeStream(stream AudioChunk) returns (stream RiskAssessment);
+
+  // One-shot analysis of a short pre-recorded clip.
+  rpc AnalyzeClip(AudioClip) returns (RiskAssessment);
+}
+
+message AudioChunk {
+  string session_id = 1;
+  int32 sample_rate = 2;
+  bytes pcm_data = 3;
+}
+
+message AudioClip {
+  string session_id = 1;
+  int32 sample_rate = 2;
+  bytes pcm_data = 3;
+}
+
+message RiskAssessment {
+  string session_id = 1;
+  float risk_score = 2;
+  float spectral_score = 3;
+  float prosody_score = 4;
+  float consistency_score = 5;
+  string rationale = 6;
+  bool alert_triggered = 7;
+  string recommended_action = 8;
+}

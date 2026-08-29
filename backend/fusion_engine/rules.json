@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "spectral": 0.45,
+    "prosody": 0.25,
+    "consistency": 0.30
+  },
+  "context_multipliers": {
+    "unknown_caller": 1.15,
+    "transaction_keywords_present": 1.25,
+    "prior_fraud_flag": 1.2
+  },
+  "alert_threshold": 85,
+  "min_consecutive_windows_above_threshold": 3
+}

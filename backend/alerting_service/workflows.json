@@ -1,0 +1,60 @@
+{
+  "scenarios": [
+    {
+      "name": "critical_impersonation",
+      "risk_threshold": 85,
+      "recommended_action": "block_transaction_immediately",
+      "notify_channels": ["ui", "sms", "email"],
+      "verification_required": ["supervisor_approval", "video_call_verification", "in_person_confirmation"],
+      "description": "Critical threat: AI voice clone attack highly probable. All pending approvals frozen."
+    },
+    {
+      "name": "high_value_transaction_call",
+      "risk_threshold": 65,
+      "recommended_action": "require_callback",
+      "notify_channels": ["ui", "sms"],
+      "verification_required": ["callback_on_registered_number", "otp_verification"],
+      "description": "High-value transaction with elevated voice risk. Require callback verification."
+    },
+    {
+      "name": "privileged_access_approval",
+      "risk_threshold": 55,
+      "recommended_action": "escalate_supervisor",
+      "notify_channels": ["ui", "sms", "email"],
+      "verification_required": ["supervisor_approval", "mfa_challenge"],
+      "description": "Privileged access request with suspicious voice patterns. Escalate to supervisor."
+    },
+    {
+      "name": "government_sensitive_call",
+      "risk_threshold": 50,
+      "recommended_action": "flag_and_record",
+      "notify_channels": ["ui", "email"],
+      "verification_required": ["identity_verification", "callback_on_official_number"],
+      "description": "Government official impersonation attempt. Flag for investigation."
+    },
+    {
+      "name": "telecom_fraud_pattern",
+      "risk_threshold": 60,
+      "recommended_action": "block_caller_id",
+      "notify_channels": ["ui", "sms"],
+      "verification_required": ["sim_verification", "geo_location_check"],
+      "description": "Telecom fraud pattern detected. Consider blocking caller ID across network."
+    },
+    {
+      "name": "enterprise_social_engineering",
+      "risk_threshold": 55,
+      "recommended_action": "isolate_and_verify",
+      "notify_channels": ["ui", "email"],
+      "verification_required": ["email_confirmation", "slack_verification", "mfa_challenge"],
+      "description": "Social engineering attack via voice. Require out-of-band confirmation."
+    },
+    {
+      "name": "default",
+      "risk_threshold": 65,
+      "recommended_action": "flag_for_review",
+      "notify_channels": ["ui"],
+      "verification_required": ["manual_review"],
+      "description": "General alert. Flag for security team review."
+    }
+  ]
+}

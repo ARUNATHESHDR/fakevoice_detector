@@ -1,0 +1,753 @@
+{
+  "benchmark_type": "multilingual_accent_evaluation",
+  "method": "feature_extraction_based (not simulated)",
+  "sample_rate": 16000,
+  "window_duration_s": 2.0,
+  "languages_tested": [
+    "Hindi",
+    "Tamil",
+    "Telugu",
+    "Bengali",
+    "Marathi",
+    "Indian English"
+  ],
+  "accents_tested": [
+    "North Indian",
+    "South Indian",
+    "East Indian",
+    "Neutral Corporate"
+  ],
+  "total_cases": 48,
+  "correct": 39,
+  "overall_accuracy_pct": 81.25,
+  "per_language_accuracy": {
+    "Hindi": 62.5,
+    "Tamil": 100.0,
+    "Telugu": 87.5,
+    "Bengali": 100.0,
+    "Marathi": 75.0,
+    "Indian English": 62.5
+  },
+  "results": [
+    {
+      "language": "Hindi",
+      "accent": "North Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.12407,
+        "instantaneous_freq_deviation": 1.520663,
+        "zero_crossing_rate": 0.031688,
+        "rms_energy": 0.380611,
+        "spectral_centroid": 2900.73
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "North Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.111477,
+        "instantaneous_freq_deviation": 1.395352,
+        "zero_crossing_rate": 0.026251,
+        "rms_energy": 0.420406,
+        "spectral_centroid": 738.79
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "South Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.111827,
+        "instantaneous_freq_deviation": 1.607851,
+        "zero_crossing_rate": 0.026563,
+        "rms_energy": 0.324,
+        "spectral_centroid": 2925.82
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "South Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.101741,
+        "instantaneous_freq_deviation": 1.468864,
+        "zero_crossing_rate": 0.026313,
+        "rms_energy": 0.420352,
+        "spectral_centroid": 765.58
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "East Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.114141,
+        "instantaneous_freq_deviation": 1.544659,
+        "zero_crossing_rate": 0.057283,
+        "rms_energy": 0.398083,
+        "spectral_centroid": 2989.33
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "East Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.120275,
+        "instantaneous_freq_deviation": 1.429275,
+        "zero_crossing_rate": 0.024407,
+        "rms_energy": 0.420428,
+        "spectral_centroid": 727.43
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "Neutral Corporate",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.114674,
+        "instantaneous_freq_deviation": 1.599399,
+        "zero_crossing_rate": 0.023751,
+        "rms_energy": 0.346584,
+        "spectral_centroid": 3176.36
+      }
+    },
+    {
+      "language": "Hindi",
+      "accent": "Neutral Corporate",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.116263,
+        "instantaneous_freq_deviation": 1.507601,
+        "zero_crossing_rate": 0.023782,
+        "rms_energy": 0.420525,
+        "spectral_centroid": 714.94
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "North Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.124447,
+        "instantaneous_freq_deviation": 1.567383,
+        "zero_crossing_rate": 0.071158,
+        "rms_energy": 0.33539,
+        "spectral_centroid": 2725.47
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "North Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.107635,
+        "instantaneous_freq_deviation": 1.437463,
+        "zero_crossing_rate": 0.026938,
+        "rms_energy": 0.420306,
+        "spectral_centroid": 777.47
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "South Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.2,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.101646,
+        "instantaneous_freq_deviation": 1.657568,
+        "zero_crossing_rate": 0.111097,
+        "rms_energy": 0.369797,
+        "spectral_centroid": 2702.47
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "South Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.099746,
+        "instantaneous_freq_deviation": 1.554623,
+        "zero_crossing_rate": 0.02822,
+        "rms_energy": 0.420607,
+        "spectral_centroid": 802.79
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "East Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.115391,
+        "instantaneous_freq_deviation": 1.621216,
+        "zero_crossing_rate": 0.052752,
+        "rms_energy": 0.363398,
+        "spectral_centroid": 2909.36
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "East Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.108864,
+        "instantaneous_freq_deviation": 1.469291,
+        "zero_crossing_rate": 0.026407,
+        "rms_energy": 0.420475,
+        "spectral_centroid": 764.2
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "Neutral Corporate",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.2,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.103764,
+        "instantaneous_freq_deviation": 1.555479,
+        "zero_crossing_rate": 0.052814,
+        "rms_energy": 0.322293,
+        "spectral_centroid": 2924.09
+      }
+    },
+    {
+      "language": "Tamil",
+      "accent": "Neutral Corporate",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.100432,
+        "instantaneous_freq_deviation": 1.413078,
+        "zero_crossing_rate": 0.025657,
+        "rms_energy": 0.42051,
+        "spectral_centroid": 752.7
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "North Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.116769,
+        "instantaneous_freq_deviation": 1.597264,
+        "zero_crossing_rate": 0.036001,
+        "rms_energy": 0.461537,
+        "spectral_centroid": 2893.16
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "North Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.097439,
+        "instantaneous_freq_deviation": 1.452599,
+        "zero_crossing_rate": 0.02597,
+        "rms_energy": 0.420594,
+        "spectral_centroid": 758.9
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "South Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.2,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.103358,
+        "instantaneous_freq_deviation": 1.564495,
+        "zero_crossing_rate": 0.056096,
+        "rms_energy": 0.42425,
+        "spectral_centroid": 3124.85
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "South Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.103621,
+        "instantaneous_freq_deviation": 1.40112,
+        "zero_crossing_rate": 0.027157,
+        "rms_energy": 0.420458,
+        "spectral_centroid": 784.19
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "East Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.116257,
+        "instantaneous_freq_deviation": 1.538701,
+        "zero_crossing_rate": 0.04572,
+        "rms_energy": 0.374311,
+        "spectral_centroid": 2904.85
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "East Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.115869,
+        "instantaneous_freq_deviation": 1.397885,
+        "zero_crossing_rate": 0.025282,
+        "rms_energy": 0.42044,
+        "spectral_centroid": 746.46
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "Neutral Corporate",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.122935,
+        "instantaneous_freq_deviation": 1.52675,
+        "zero_crossing_rate": 0.038626,
+        "rms_energy": 0.347993,
+        "spectral_centroid": 2766.29
+      }
+    },
+    {
+      "language": "Telugu",
+      "accent": "Neutral Corporate",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.103185,
+        "instantaneous_freq_deviation": 1.408075,
+        "zero_crossing_rate": 0.024751,
+        "rms_energy": 0.420405,
+        "spectral_centroid": 731.58
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "North Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.112589,
+        "instantaneous_freq_deviation": 1.609584,
+        "zero_crossing_rate": 0.055252,
+        "rms_energy": 0.361861,
+        "spectral_centroid": 2925.2
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "North Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.107455,
+        "instantaneous_freq_deviation": 1.476662,
+        "zero_crossing_rate": 0.024063,
+        "rms_energy": 0.42049,
+        "spectral_centroid": 719.8
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "South Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.119813,
+        "instantaneous_freq_deviation": 1.543719,
+        "zero_crossing_rate": 0.025688,
+        "rms_energy": 0.367969,
+        "spectral_centroid": 2940.67
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "South Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.10736,
+        "instantaneous_freq_deviation": 1.400293,
+        "zero_crossing_rate": 0.025376,
+        "rms_energy": 0.420406,
+        "spectral_centroid": 746.01
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "East Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.115582,
+        "instantaneous_freq_deviation": 1.592783,
+        "zero_crossing_rate": 0.023969,
+        "rms_energy": 0.445334,
+        "spectral_centroid": 2999.69
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "East Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.107639,
+        "instantaneous_freq_deviation": 1.508413,
+        "zero_crossing_rate": 0.023751,
+        "rms_energy": 0.420308,
+        "spectral_centroid": 707.38
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "Neutral Corporate",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.120094,
+        "instantaneous_freq_deviation": 1.563413,
+        "zero_crossing_rate": 0.04647,
+        "rms_energy": 0.324905,
+        "spectral_centroid": 3158.49
+      }
+    },
+    {
+      "language": "Bengali",
+      "accent": "Neutral Corporate",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.106801,
+        "instantaneous_freq_deviation": 1.460788,
+        "zero_crossing_rate": 0.022844,
+        "rms_energy": 0.420645,
+        "spectral_centroid": 696.08
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "North Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.116929,
+        "instantaneous_freq_deviation": 1.542919,
+        "zero_crossing_rate": 0.061971,
+        "rms_energy": 0.349709,
+        "spectral_centroid": 3197.45
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "North Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.10648,
+        "instantaneous_freq_deviation": 1.409165,
+        "zero_crossing_rate": 0.025313,
+        "rms_energy": 0.420515,
+        "spectral_centroid": 745.2
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "South Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.2,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.108239,
+        "instantaneous_freq_deviation": 1.617425,
+        "zero_crossing_rate": 0.059939,
+        "rms_energy": 0.342448,
+        "spectral_centroid": 2620.03
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "South Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.10755,
+        "instantaneous_freq_deviation": 1.486104,
+        "zero_crossing_rate": 0.026532,
+        "rms_energy": 0.420377,
+        "spectral_centroid": 770.17
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "East Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.109746,
+        "instantaneous_freq_deviation": 1.534743,
+        "zero_crossing_rate": 0.027063,
+        "rms_energy": 0.355727,
+        "spectral_centroid": 2801.2
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "East Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.116201,
+        "instantaneous_freq_deviation": 1.414413,
+        "zero_crossing_rate": 0.024688,
+        "rms_energy": 0.42066,
+        "spectral_centroid": 733.7
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "Neutral Corporate",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.2,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.106686,
+        "instantaneous_freq_deviation": 1.610844,
+        "zero_crossing_rate": 0.054064,
+        "rms_energy": 0.3573,
+        "spectral_centroid": 2976.83
+      }
+    },
+    {
+      "language": "Marathi",
+      "accent": "Neutral Corporate",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.107748,
+        "instantaneous_freq_deviation": 1.469313,
+        "zero_crossing_rate": 0.024063,
+        "rms_energy": 0.420586,
+        "spectral_centroid": 719.45
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "North Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.2,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.104917,
+        "instantaneous_freq_deviation": 1.555229,
+        "zero_crossing_rate": 0.051345,
+        "rms_energy": 0.340883,
+        "spectral_centroid": 3145.04
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "North Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "SYNTHETIC",
+      "confidence": 0.55,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.109869,
+        "instantaneous_freq_deviation": 1.455692,
+        "zero_crossing_rate": 0.023157,
+        "rms_energy": 0.420203,
+        "spectral_centroid": 701.38
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "South Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.116089,
+        "instantaneous_freq_deviation": 1.549254,
+        "zero_crossing_rate": 0.027063,
+        "rms_energy": 0.339029,
+        "spectral_centroid": 2873.78
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "South Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.117345,
+        "instantaneous_freq_deviation": 1.426226,
+        "zero_crossing_rate": 0.024376,
+        "rms_energy": 0.420612,
+        "spectral_centroid": 726.46
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "East Indian",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.121905,
+        "instantaneous_freq_deviation": 1.557299,
+        "zero_crossing_rate": 0.022719,
+        "rms_energy": 0.368011,
+        "spectral_centroid": 3044.95
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "East Indian",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.118963,
+        "instantaneous_freq_deviation": 1.474381,
+        "zero_crossing_rate": 0.022626,
+        "rms_energy": 0.420553,
+        "spectral_centroid": 690.32
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "Neutral Corporate",
+      "ground_truth": "GENUINE",
+      "predicted": "GENUINE",
+      "confidence": 0.0,
+      "correct": true,
+      "features": {
+        "group_delay_deviation": 0.115572,
+        "instantaneous_freq_deviation": 1.649607,
+        "zero_crossing_rate": 0.069283,
+        "rms_energy": 0.337414,
+        "spectral_centroid": 2833.16
+      }
+    },
+    {
+      "language": "Indian English",
+      "accent": "Neutral Corporate",
+      "ground_truth": "SYNTHETIC",
+      "predicted": "GENUINE",
+      "confidence": 0.35,
+      "correct": false,
+      "features": {
+        "group_delay_deviation": 0.112005,
+        "instantaneous_freq_deviation": 1.58438,
+        "zero_crossing_rate": 0.022126,
+        "rms_energy": 0.420518,
+        "spectral_centroid": 675.42
+      }
+    }
+  ]
+}

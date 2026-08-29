@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Model artifacts (large binaries -- don't commit these, see ml-training/README.md)
+*.pth
+*.pkl
+backend/*/models/**
+!backend/*/models/.gitkeep
+!backend/*/models/PUT_MODEL_HERE.txt
+pretrained_ecapa*/
+
+# Node / Next.js
+node_modules/
+.next/
+frontend/.env.local
+
+# Env
+.env
+
+# OS
+.DS_Store
